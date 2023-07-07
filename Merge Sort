@@ -1,0 +1,27 @@
+[16,21,11,8,12,22] -> Merge Sort
+
+•	İlk adımda, diziyi yarıya bölerek alt dizilere ayırırız.
+Dizi: [16, 21, 11] | [8, 12, 22]
+
+•	Her alt diziyi aynı şekilde yarıya böleriz.
+Sol alt dizi: [16] | [21, 11]
+Sağ alt dizi: [8] | [12, 22]
+
+•	Her alt diziyi tekrar yarıya böleriz.
+Sol üst alt dizi: [16]
+Sol alt alt dizi: [21] | [11]
+Sağ üst alt dizi: [8]
+Sağ alt alt dizi: [12] | [22]
+
+•	Alt diziler artık tek elemanlı olduğu için, bu alt dizileri birleştiririz.
+Sol alt alt dizi: [11, 21]
+Sağ alt alt dizi: [12, 22]
+
+•	Daha sonra, birleştirilen alt dizileri sıralı bir şekilde birleştiririz.
+Sol alt dizi: [11, 16, 21]
+Sağ alt dizi: [8, 12, 22]
+
+•	Son adımda, en üstteki iki alt diziyi birleştiririz.
+Sıralanmış dizi: [8, 11, 12, 16, 21, 22]
+
+Merge Sort için Big-O gösterimi O(n log n) olur. Bu, n elemanlı bir diziyi bölmenin log n adımına ve birleştirmenin her adımında n adımına ihtiyaç duyulması anlamına gelir. Böylece toplam karmaşıklık O(n log n) olur.
