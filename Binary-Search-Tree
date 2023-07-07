@@ -1,0 +1,63 @@
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+Örnek: root x'dir. root'un sağından y bulunur. Solunda z bulunur vb.
+
+BST:7  7 dir.
+5, kök düğüm olan 7'nin solundan daha küçük olduğu için 7'nin sol alt düğümüne eklenir.
+ [7]
+5
+1, kök düğüm olan 7'nin solundan daha küçük olduğu için 7'nin sol alt düğümünün soluna eklenir.
+   [7]
+  5
+ /
+1
+8, kök düğüm olan 7'den daha büyük olduğu için 7'nin sağ alt düğümüne eklenir.
+BST: [7]
+  5      8
+ /
+1 
+3, kök düğüm olan 7'nin solundan daha küçük olduğu için 5'in sol alt düğümüne eklenir.
+BST: [7]
+  5      8
+ /
+1 
+ \
+  3
+6, kök düğüm olan 7'nin solundan daha büyük olduğu için 5'in sağ alt düğümüne eklenir.
+BST: [7]
+  5      8
+ / \
+1   6
+ \
+  3
+0, kök düğüm olan 7'nin solundan daha küçük olduğu için 1'in sol alt düğümüne eklenir.
+BST: [7]
+   5     8
+  / \
+ 1   6
+ / \
+0   3
+9, kök düğüm olan 7'den daha büyük olduğu için 8'in sağ alt düğümüne eklenir.
+BST: [7]
+   5     8
+  / \     \
+ 1   6     9
+ / \
+0   3
+4, kök düğüm olan 7'nin solundan daha büyük olduğu için 5'in sağ alt düğümünün soluna eklenir.
+BST: [7]
+   5     8
+  / \     \
+ 1   6     9
+ / \
+0   3
+     \
+      4
+2, kök düğüm olan 7'nin solundan daha küçük olduğu için 1'in sol alt düğümünün soluna eklenir.
+BST: [7]
+   5     8
+  / \     \
+ 1   6     9
+ / \
+0   3
+  /  \
+ 2    4
